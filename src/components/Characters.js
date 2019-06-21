@@ -3,6 +3,7 @@ import CharacterItem from "./CharacterItem";
 import Score from "./Score";
 import characters from "../data/characters.json";
 import NavBar from "./Navbar";
+import "../styles/characters.css";
 
 class Characters extends React.Component {
   state = {
@@ -11,7 +12,8 @@ class Characters extends React.Component {
     selected: [],
     score: 0,
     highScore: 0,
-    match: false
+    match: false,
+    message: "Click an image to begin!"
   };
 
   // Randomly displayed characters
@@ -48,6 +50,8 @@ class Characters extends React.Component {
     );
     if (this.state.selected.includes(id)) {
       console.log("match - end game");
+      // Send message
+      this.setState({ message: "Incorrect Guess!" });
       this.setState({ match: true });
     } else {
       // No match - continue game
@@ -61,6 +65,8 @@ class Characters extends React.Component {
         this.setState({ highScore: this.state.highScore + 1 });
         console.log("High Score", this.state.highScore);
       }
+      // Send message
+      this.setState({ message: "You Guessed Correctly!" });
     }
   };
 
@@ -72,6 +78,8 @@ class Characters extends React.Component {
     this.setState({ match: false });
     // Reset selected array
     this.setState({ selected: [] });
+    // Reset message
+    this.setState({ message: "Click an image to begin!" });
   };
 
   render() {
@@ -92,7 +100,12 @@ class Characters extends React.Component {
             handleClickEvent={this.handleClickEvent}
           />
         ))}
-        <NavBar score={this.state.score} highScore={this.state.highScore} />
+        <NavBar
+          score={this.state.score}
+          highScore={this.state.highScore}
+          message={this.state.message}
+          match={this.state.match}
+        />
       </div>
     );
   }

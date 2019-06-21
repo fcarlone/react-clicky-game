@@ -2,6 +2,7 @@ import React from "react";
 import CharacterItem from "./CharacterItem";
 import Score from "./Score";
 import characters from "../data/characters.json";
+import NavBar from "./Navbar";
 
 class Characters extends React.Component {
   state = {
@@ -9,6 +10,7 @@ class Characters extends React.Component {
     randomCharacters: [],
     selected: [],
     score: 0,
+    highScore: 0,
     match: false
   };
 
@@ -47,9 +49,10 @@ class Characters extends React.Component {
     if (this.state.selected.includes(id)) {
       console.log("match - end game");
       this.setState({ match: true });
-      // Reset score to 0
+      // Reset user score to 0
+      this.setState({ score: 0 });
       // Reset selected array
-      // Reset match to false
+      this.setState({ selected: [] });
     } else {
       // No match - continue game
       console.log("continue");
@@ -57,6 +60,11 @@ class Characters extends React.Component {
       this.setState({ score: this.state.score + 1 });
       console.log("Characters selected", this.state.selected);
       console.log("Score", this.state.score);
+      // Increment high score
+      if (this.state.score >= this.state.highScore) {
+        this.setState({ highScore: this.state.highScore + 1 });
+        console.log("High Score", this.state.highScore);
+      }
     }
   };
 
@@ -66,6 +74,8 @@ class Characters extends React.Component {
 
     if (renderScore) {
       score = <Score score={this.state.score} />;
+      // Reset match to false
+      // this.setState({ match: false });
     }
     return (
       <div>
@@ -78,6 +88,7 @@ class Characters extends React.Component {
             handleClickEvent={this.handleClickEvent}
           />
         ))}
+        <NavBar score={this.state.score} highScore={this.state.highScore} />
       </div>
     );
   }

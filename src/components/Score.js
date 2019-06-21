@@ -10,7 +10,8 @@ class Score extends React.Component {
     this.handleClose = this.handleClose.bind(this);
 
     this.state = {
-      show: true
+      show: true,
+      highScore: 0
     };
   }
 
@@ -28,11 +29,10 @@ class Score extends React.Component {
     return (
       <div>
         <Modal show={this.state.show} onHide={this.handleClose}>
-          <Modal.Header closeButton>
+          <Modal.Header>
             <Modal.Title>Game Over</Modal.Title>
           </Modal.Header>
           <Modal.Body>Your Score is: {this.props.score}</Modal.Body>
-
           <Modal.Footer>
             <Button variant="secondary" onClick={this.handleClose}>
               Close

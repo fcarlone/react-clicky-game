@@ -1,12 +1,8 @@
 import React from "react";
 
-const CharacterItem = props => {
+function CharacterItem(props) {
   // Destructure props
   const { image, id } = props.character;
-
-  const handleClickEvent = id => {
-    console.log("handle click event", id);
-  };
 
   return (
     <div
@@ -18,11 +14,11 @@ const CharacterItem = props => {
           src={image}
           alt="character"
           style={{ width: "100px" }}
-          onClick={() => handleClickEvent(id)}
+          onClick={() => props.handleClickEvent(id)}
         />
       </div>
     </div>
   );
-};
+}
 
 export default CharacterItem;

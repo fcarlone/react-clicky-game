@@ -49,12 +49,6 @@ class Characters extends React.Component {
     if (this.state.selected.includes(id)) {
       console.log("match - end game");
       this.setState({ match: true });
-      // Reset user score to 0
-      // this.setState({ score: 0 });
-      // Reset match to false
-      // this.setState({ match: false });
-      // Reset selected array
-      this.setState({ selected: [] });
     } else {
       // No match - continue game
       console.log("continue");
@@ -70,12 +64,22 @@ class Characters extends React.Component {
     }
   };
 
+  resetState = () => {
+    console.log("invoke reset function");
+    // Reset user score to 0
+    this.setState({ score: 0 });
+    // Reset match to false
+    this.setState({ match: false });
+    // Reset selected array
+    this.setState({ selected: [] });
+  };
+
   render() {
     let renderScore = this.state.match;
     let score;
 
     if (renderScore) {
-      score = <Score score={this.state.score} />;
+      score = <Score score={this.state.score} resetState={this.resetState} />;
     }
     return (
       <div>

@@ -14,17 +14,17 @@ class Score extends React.Component {
     };
   }
 
-  handleClose() {
+  handleClose = () => {
     this.setState({ show: false });
-  }
+    // Reset Character state
+    this.props.resetState();
+  };
 
-  handleShow() {
+  handleShow = () => {
     this.setState({ show: true });
-  }
-
+  };
+  x;
   render() {
-    console.log("Final score", this.props.score);
-
     return (
       <div>
         <Modal show={this.state.show} onHide={this.handleClose}>

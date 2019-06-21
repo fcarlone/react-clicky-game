@@ -47,6 +47,9 @@ class Characters extends React.Component {
     if (this.state.selected.includes(id)) {
       console.log("match - end game");
       this.setState({ match: true });
+      // Reset score to 0
+      // Reset selected array
+      // Reset match to false
     } else {
       // No match - continue game
       console.log("continue");

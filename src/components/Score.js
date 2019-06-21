@@ -10,8 +10,7 @@ class Score extends React.Component {
     this.handleClose = this.handleClose.bind(this);
 
     this.state = {
-      show: true,
-      highScore: 0
+      show: true
     };
   }
 

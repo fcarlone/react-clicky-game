@@ -50,7 +50,9 @@ class Characters extends React.Component {
       console.log("match - end game");
       this.setState({ match: true });
       // Reset user score to 0
-      this.setState({ score: 0 });
+      // this.setState({ score: 0 });
+      // Reset match to false
+      // this.setState({ match: false });
       // Reset selected array
       this.setState({ selected: [] });
     } else {
@@ -74,8 +76,6 @@ class Characters extends React.Component {
 
     if (renderScore) {
       score = <Score score={this.state.score} />;
-      // Reset match to false
-      // this.setState({ match: false });
     }
     return (
       <div>

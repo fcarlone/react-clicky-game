@@ -5,8 +5,9 @@ class Footer extends React.Component {
   render() {
     return (
       <div>
+        <div className="footer-bar" />
         <div className="footer-title">
-          <h1>Footer Component</h1>
+          <h5>Clicky Game</h5>
         </div>
       </div>
     );

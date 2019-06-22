@@ -6,8 +6,10 @@ import "../styles/navbar.css";
 const NavBar = props => {
   console.log("Nav bar props", props);
   return (
-    <Navbar bg="light" variant="light" fixed="top">
-      <Navbar.Text className="d-flex w-50 order-0">Clicky Game </Navbar.Text>
+    <Navbar className="navbar-container" fixed="top">
+      <Navbar.Text className="d-flex w-50 order-0 nav-title">
+        Clicky Game
+      </Navbar.Text>
       <Navbar.Text className="d-flex w-50 justify-content-center order-2">
         <span
           className={

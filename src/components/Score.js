@@ -1,6 +1,7 @@
 import React from "react";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import "../styles/score.css";
 
 class Score extends React.Component {
   constructor(props, context) {
@@ -27,11 +28,19 @@ class Score extends React.Component {
   render() {
     return (
       <div>
-        <Modal show={this.state.show} onHide={this.handleClose}>
+        <Modal
+          className="modal-container vertical-alignment-helper .vertical-align-center"
+          show={this.state.show}
+          onHide={this.handleClose}
+        >
           <Modal.Header>
-            <Modal.Title>Game Over</Modal.Title>
+            <Modal.Title className="modal-title">
+              <h1>Game Over</h1>
+            </Modal.Title>
           </Modal.Header>
-          <Modal.Body>Your Score is: {this.props.score}</Modal.Body>
+          <Modal.Body>
+            <p>Your Score: {this.props.score}</p>
+          </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={this.handleClose}>
               Close

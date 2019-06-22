@@ -11,7 +11,6 @@ function CharacterItem(props) {
         <img
           src={image}
           alt="character"
-          style={{ width: "150px" }}
           onClick={() => props.handleClickEvent(id)}
         />
       </div>

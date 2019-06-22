@@ -12,7 +12,7 @@ Test your memory with The Clicky Game. View the twelve images on the site, click
 React - a JavaScript library for building user interfaces  
 JavaScript - for the applications logic  
 Bootstrap - front-end framework used to create modern websites and making the application responsive  
-React Bootstrap - for creating the Modal component
+React Bootstrap - for creating the modal plugin 
 
 ### Application Deployment:
 The application is hosted by GitHub Pages. You can visit the site at:  

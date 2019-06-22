@@ -3,15 +3,12 @@
 ## Game application using React for building the front-end interface
 
 ## About the Application:
-
 The purpose of this application is to build an interactive game around React.
 
 ## Application Instructions:
-
 Test your memory with The Clicky Game. View the twelve images on the site, click on an image and try not to select the same image. View your score and try to beat the high score.
 
 ### Software/libraries used for this application:
-
 React - a JavaScript library for building user interfaces  
 JavaScript - for the applications logic  
 Bootstrap - front-end framework used to create modern websites and making the application responsive  

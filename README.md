@@ -1,6 +1,6 @@
 # Clicky Game - React
 
-## Game application using React for building the front-end interface
+## Game application using React for building the front-end interface.
 
 ### About the Application:
 The purpose of this application is to build an interactive game around React.

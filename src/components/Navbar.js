@@ -7,9 +7,8 @@ const NavBar = props => {
   console.log("Nav bar props", props);
   return (
     <Navbar bg="light" variant="light" fixed="top">
-      <Navbar.Text>Clicky Game </Navbar.Text>
-      <Navbar.Text>
-        ||
+      <Navbar.Text className="d-flex w-50 order-0">Clicky Game </Navbar.Text>
+      <Navbar.Text className="d-flex w-50 justify-content-center order-2">
         <span
           className={
             props.score === 0 && props.match === false
@@ -19,11 +18,10 @@ const NavBar = props => {
               : "green"
           }
         >
-          {props.message}{" "}
+          {props.message}
         </span>
-        ||
       </Navbar.Text>
-      <Navbar.Text>
+      <Navbar.Text className="navbar-text  mt-1 w-50 text-right order-1 order-md-last">
         Your Score: {props.score} | High Score: {props.highScore}
       </Navbar.Text>
     </Navbar>

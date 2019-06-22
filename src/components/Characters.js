@@ -1,6 +1,7 @@
 import React from "react";
 import CharacterItem from "./CharacterItem";
 import Score from "./Score";
+import Footer from "./Footer";
 import characters from "../data/characters.json";
 import NavBar from "./Navbar";
 import "../styles/characters.css";
@@ -111,6 +112,7 @@ class Characters extends React.Component {
           message={this.state.message}
           match={this.state.match}
         />
+        <Footer />
       </div>
     );
   }

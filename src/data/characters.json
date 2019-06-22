@@ -2,61 +2,61 @@
   {
     "id": 1,
     "name": "Miss Piggy",
-    "image": "https://upload.wikimedia.org/wikipedia/en/2/22/MissPiggy.jpg"
+    "image": "./assets/images/MissPiggy.jpg"
   },
   {
     "id": 2,
     "name": "Kermit the Frog",
-    "image": "https://upload.wikimedia.org/wikipedia/en/6/62/Kermit_the_Frog.jpg"
+    "image": "./assets/images/Kermit_the_Frog.jpg"
   },
   {
     "id": 3,
     "name": "Gonzo",
-    "image": "https://upload.wikimedia.org/wikipedia/en/0/0a/Gonzo_the_Great.jpg"
+    "image": "./assets/images/Gonzo_the_Great.jpg"
   },
   {
     "id": 4,
     "name": "The Swedish Chef",
-    "image": "https://upload.wikimedia.org/wikipedia/en/e/e7/The_Swedish_Chef.jpg"
+    "image": "./assets/images/The_Swedish_Chef.jpg"
   },
   {
     "id": 5,
     "name": "Fozzie Bear",
-    "image": "https://upload.wikimedia.org/wikipedia/en/5/51/Fozzie_Bear.jpg"
+    "image": "./assets/images/Fozzie_Bear.jpg"
   },
   {
     "id": 6,
     "name": "Beaker",
-    "image": "https://upload.wikimedia.org/wikipedia/en/5/59/Beaker_%28Muppet%29.jpg"
+    "image": "./assets/images/Beaker.jpg"
   },
   {
     "id": 7,
     "name": "Rowlf the Dog",
-    "image": "https://upload.wikimedia.org/wikipedia/en/b/b5/Rowlf_the_Dog.jpg"
+    "image": "./assets/images/Rowlf_the_Dog.jpg"
   },
   {
     "id": 8,
     "name": "Pepé the King Prawn",
-    "image": "https://upload.wikimedia.org/wikipedia/en/3/32/Pepe_the_King_Prawn_%28Muppet%29.jpg"
+    "image": "./assets/images/Pepe_the_King_Prawn.jpg"
   },
   {
     "id": 9,
     "name": "Scooter",
-    "image": "https://upload.wikimedia.org/wikipedia/en/d/df/ScooterMuppet.jpg"
+    "image": "./assets/images/ScooterMuppet.jpg"
   },
   {
     "id": 10,
     "name": "Statler and Waldorf",
-    "image": "https://upload.wikimedia.org/wikipedia/en/0/02/Statler_and_Waldorf.jpg"
+    "image": "./assets/images/Statler_and_Waldorf.jpg"
   },
   {
     "id": 11,
     "name": "Honeydew",
-    "image": "https://upload.wikimedia.org/wikipedia/en/d/dd/Dr._Bunsen_Honeydew.jpg"
+    "image": "./assets/images/Dr._Bunsen_Honeydew.jpg"
   },
   {
     "id": 12,
     "name": "Sam the Eagle",
-    "image": "https://upload.wikimedia.org/wikipedia/en/b/b4/SamTheEagle.jpg"
+    "image": "./assets/images/SamTheEagle.jpg"
   }
 ]

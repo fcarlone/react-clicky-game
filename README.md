@@ -1,11 +1,11 @@
 # Clicky Game - React
 
-## Game application using React for building the front-end interface.
+### Game application using React for building the front-end interface.
 
 ### About the Application:
 The purpose of this application is to build an interactive game around React.
 
-##E Application Instructions:
+### Application Instructions:
 Test your memory with The Clicky Game. View the twelve images on the site, click on an image and try not to select the same image. View your score and try to beat the high score.
 
 ### Software/libraries used for this application:

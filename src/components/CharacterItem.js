@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/characterItem.css";
 
-function CharacterItem(props) {
+const CharacterItem = props => {
   // Destructure props
   const { image, id, name } = props.character;
 
@@ -15,6 +15,6 @@ function CharacterItem(props) {
       />
     </div>
   );
-}
+};
 
 export default CharacterItem;

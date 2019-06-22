@@ -94,13 +94,17 @@ class Characters extends React.Component {
       <div>
         {score}
         {console.log(this.state.characters)}
-        {this.state.randomCharacters.map(character => (
-          <CharacterItem
-            key={character.id}
-            character={character}
-            handleClickEvent={this.handleClickEvent}
-          />
-        ))}
+        <div className="container">
+          <div className="img-container">
+            {this.state.randomCharacters.map(character => (
+              <CharacterItem
+                key={character.id}
+                character={character}
+                handleClickEvent={this.handleClickEvent}
+              />
+            ))}
+          </div>
+        </div>
         <NavBar
           score={this.state.score}
           highScore={this.state.highScore}

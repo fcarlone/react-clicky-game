@@ -35,6 +35,7 @@ class Characters extends React.Component {
     // If score equal (array.length-1) - game over
   };
 
+  // Randomly displayed characters
   handleResortCharacters = () => {
     const randomCharacters = this.state.randomCharacters.sort(() => {
       return Math.random() - 0.5;

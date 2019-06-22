@@ -3,9 +3,12 @@ import React from "react";
 // Stateless Function
 const Header = () => {
   return (
-    <div>
-      <h1>Header Component</h1>
-      <h2>Instructions</h2>
+    <div className="header-container">
+      <h1>Clicky Game</h1>
+      <h2>
+        Click on an image to score points. The game ends when you click on the
+        same image twice.
+      </h2>
     </div>
   );
 };

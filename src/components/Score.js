@@ -29,14 +29,12 @@ class Score extends React.Component {
     return (
       <div>
         <Modal
-          className="modal-container vertical-alignment-helper .vertical-align-center"
+          className="modal-container"
           show={this.state.show}
           onHide={this.handleClose}
         >
           <Modal.Header>
-            <Modal.Title className="modal-title">
-              <h1>Game Over</h1>
-            </Modal.Title>
+            <Modal.Title className="modal-title">Game Over</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <p>Your Score: {this.props.score}</p>

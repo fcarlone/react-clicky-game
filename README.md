@@ -10,7 +10,7 @@ Test your memory with The Clicky Game. View the twelve images on the site, click
 
 ### Software/libraries used for this application:
 React - a JavaScript library for building user interfaces  
-JavaScript - for the applications logic  
+JavaScript - for application logic  
 Bootstrap - front-end framework used to create modern websites and making the application responsive  
 React Bootstrap - for creating the modal plugin 
 
